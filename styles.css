@@ -2,35 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-	margin: 0;
-	padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* CSS for Main */
 .bg-index {
-	background: url("./images/photo1459666644539a9.png") no-repeat center center fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/photo1459666644539a9.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /* CSS for Home */
 .bg-home {
-	background: url("./images/photo1459666644539a9.png") no-repeat center center fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+  background: url("./images/photo1459666644539a9.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /* CSS for Team */
 .bg-team {
-	background: url("./images/photo1459666644539a9.png") no-repeat center center fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+  background: url("./images/photo1459666644539a9.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.text-condensed {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.6);
 }
