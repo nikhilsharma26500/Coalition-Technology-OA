@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.bg-index {
+	background: url("./images/photo1459666644539a9.png") no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+.bg-home {
+	background: url("./images/photo1459666644539a9.png") no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+.bg-team {
+	background: url("./images/photo1459666644539a9.png") no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
