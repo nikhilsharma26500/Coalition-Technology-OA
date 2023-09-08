@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   box-sizing: border-box;
@@ -25,16 +25,50 @@ body {
 
 /* CSS for Home */
 .bg-home {
-  background: url("./images/photo1459666644539a9.png") no-repeat center center
+  background: url("./images/peak.png") no-repeat center center
     fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
 /* CSS for Team */
 .bg-team {
-  background: url("./images/photo1459666644539a9.png") no-repeat center center
+  background: url("./images/photo141702142391407.png") no-repeat center center
     fixed;
   background-size: cover;
   height: 100%;
@@ -42,7 +76,7 @@ body {
 }
 
 .text-condensed {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .text-shadow {
