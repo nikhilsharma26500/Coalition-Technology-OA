@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   box-sizing: border-box;
@@ -25,15 +25,14 @@ body {
 
 /* CSS for Home */
 .bg-home {
-  background: url("./images/peak.png") no-repeat center center
-    fixed;
+  background: url("./images/peak.png") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 
 .carousel-wrap {
-  margin: 90px auto;
+  margin: 20px auto;
   padding: 0 5%;
   width: 80%;
   position: relative;
@@ -42,8 +41,8 @@ body {
 /* fix blank or flashing items on carousel */
 .owl-carousel .item {
   position: relative;
-  z-index: 100; 
-  -webkit-backface-visibility: hidden; 
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
 }
 
 /* end fix */
@@ -68,21 +67,20 @@ body {
 
 /* CSS for Team */
 .bg-team {
-  background: url("./images/photo141702142391407.png") no-repeat center center
-    fixed;
+  background: url("./images/photo141702142391407.png") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 
-.schedule_box{
+.schedule_box {
   margin: 0 10vw;
   width: fit-content;
 }
 
 /* Extras */
 .text-condensed {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .text-shadow {
