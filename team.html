@@ -13,10 +13,13 @@
   </head>
   <body class="bg-team">
     <!-- Medium and Large Screen Navbar -->
-    <div class="navbar bg-white h-[10vh] px-8 py-4">
-    
+    <div class="navbar hidden sm:block bg-white h-[10vh] px-8 py-4">
       <div class="flex h-max justify-between items-center">
-        <a title="Main" class="flex items-center gap-2" href="/index.html">
+        <a
+          title="Main"
+          class="flex items-center gap-2 hover:drop-shadow-md"
+          href="/index.html"
+        >
           <img src="./images/VectorSmartObject.png" alt="" />
           <img src="./images/LOSANGELESMOUNTAINS_0.png" alt="" />
         </a>
@@ -25,7 +28,7 @@
           <li class="">
             <a
               title="Home"
-              class="pointer text-gray-600 hover:text-blue-600 duration-200 underline"
+              class="pointer text-black hover:text-blue-500 duration-200 underline"
               href="./home.html"
               ><i>01. Home</i></a
             >
@@ -33,7 +36,7 @@
           <li class="">
             <a
               title="Team"
-              class="pointer text-gray-600 hover:text-blue-600 duration-500 underline"
+              class="pointer text-black hover:text-blue-500 duration-500 underline"
               href="./team.html"
               ><i>02. Team</i></a
             >
@@ -42,58 +45,94 @@
       </div>
     </div>
 
-    <!-- Body -->
-    <div class="h-[89vh] w-screen">
-      <div class="p-10 bg-white">
-        <div class="container px-10">
-          <h1 class="text-condensed text-#414f6b font-extrabold">
-            <span class="text-9xl">02. </span>
-            <span class="text-6xl">CLIMB</span>
-          </h1>
-          <p class="px-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
+    <!-- Small Screen Navbar -->
+    <div class="navbar block sm:hidden bg-white h-[10vh] px-8 py-4">
+      <div class="">
+        <a
+          title="Main"
+          class="flex items-center gap-2 hover:drop-shadow-md"
+          href="/index.html"
+        >
+          <img src="./images/VectorSmartObject.png" alt="" />
+          <img src="./images/LOSANGELESMOUNTAINS_0.png" alt="" />
+        </a>
 
-      <div
-        class="h-10 bg-blue-900 text-white flex items-center gap-6 text-condensed"
-      >
-        <div class="px-20 flex items-center gap-6 text-2xl">
-          <a class="bg-blue-200 text-blue-900 underline" href="#">
-            <h1>MOUNTAIN1</h1>
-          </a>
-          <a class="underline" href="#">
-            <h1>MOUNTAIN2</h1>
-          </a>
-        </div>
+        <ul class="">
+          <li class="">
+            <a
+              title="Home"
+              class="pointer text-black hover:text-blue-500 duration-200"
+              href="./home.html"
+              ><i>01. Home</i></a
+            >
+          </li>
+          <li class="">
+            <a
+              title="Team"
+              class="pointer text-black hover:text-blue-500 duration-200"
+              href="./team.html"
+              ><i>02. Team</i></a
+            >
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <div class="bg-white schedule_box bg-opacity-60 mt-10">
-        <div class="container mx-auto px-10 py-5">
-          <h1 class="text-condensed font-extrabold text-4xl text-blue-800">
-            SCHEDULE
-          </h1>
-          <div class="grid grid-cols-2 grid-rows-4 gap-4">
-            <div class="h-4">25 Nov 2016</div>
-            <div class="h-4">Vestibulum viverra</div>
-            <div class="h-4">28 Nov 2016</div>
-            <div class="h-4">Vestibulum viverra</div>
-            <div class="h-4">18 Dec 2016</div>
-            <div class="h-4">Vestibulum viverra</div>
-            <div class="h-4">7 Jan 2017</div>
-            <div class="h-4">Vestibulum viverra</div>
+    <div class="h-screen">
+      <!-- Body -->
+      <div class="w-screen h-fit">
+        <div class="md:p-10 bg-white">
+          <div class="container md:px-10 px-4">
+            <h1 class="text-condensed text-center md:text-left text-#414f6b font-extrabold">
+              <span class="text-9xl">02. </span>
+              <span class="text-6xl">CLIMB</span>
+            </h1>
+            <p class="px-10">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        
+        <div
+          class="h-10 bg-blue-900 text-white flex items-center gap-6 text-condensed"
+        >
+          <div class="px-20 flex items-center gap-6 text-2xl">
+            <a class="bg-blue-200 text-blue-900 underline" href="#">
+              <h1>MOUNTAIN1</h1>
+            </a>
+            <a class="underline" href="#">
+              <h1>MOUNTAIN2</h1>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white schedule_box bg-opacity-60 mt-10">
+          <div class="container mx-auto px-10 py-5">
+            <h1 class="text-condensed font-extrabold text-4xl text-blue-800">
+              SCHEDULE
+            </h1>
+            <div class="grid grid-cols-2 grid-rows-4 gap-4">
+              <div class="h-4">25 Nov 2016</div>
+              <div class="h-4">Vestibulum viverra</div>
+              <div class="h-4">28 Nov 2016</div>
+              <div class="h-4">Vestibulum viverra</div>
+              <div class="h-4">18 Dec 2016</div>
+              <div class="h-4">Vestibulum viverra</div>
+              <div class="h-4">7 Jan 2017</div>
+              <div class="h-4">Vestibulum viverra</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <footer class="absolute bottom-0 left-0 right-0 bg-blue-900 px-10 py-2">
+      <footer class="bg-blue-900 px-10 py-2">
         <div class="flex h-max items-center justify-between items-center">
           <a class="flex items-center gap-2 opacity-80" href="/index.html">
             <img src="./images/VectorSmartObject.png" alt="" />
