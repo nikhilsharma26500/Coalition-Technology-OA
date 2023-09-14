@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coalition Technology | Home</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
-    <script href="./script.js"></script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- CSS for Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="bg-home">
     <!-- Medium and Large Screen Navbar -->
@@ -31,13 +44,23 @@
         </a>
 
         <ul
-          class="md:flex md:items-center z-[-1] md:z-auto md:static absolute text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-4"
+          class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-4"
         >
           <li class="">
-            <a title="Home" class="pointer hover:text-cyan-400 duration-200 underline" href="./home.html"><i>01. Home</i></a>
+            <a
+              title="Home"
+              class="pointer hover:text-cyan-400 duration-200 underline"
+              href="./home.html"
+              ><i>01. Home</i></a
+            >
           </li>
           <li class="">
-            <a title="Team" class="pointer hover:text-cyan-400 duration-500 underline" href="./team.html"><i>02. Team</i></a>
+            <a
+              title="Team"
+              class="pointer hover:text-cyan-400 duration-500 underline"
+              href="./team.html"
+              ><i>02. Team</i></a
+            >
           </li>
         </ul>
       </div>
@@ -63,10 +86,10 @@
     </div>
 
     <!-- Bottom Carousel -->
-    <div class="text-white left-0 right-0 absolute bottom-0 h-2/6">
-      <div class="h-full bg-blue-500 opacity-50">
+    <div class="text-white left-0 right-0 absolute bottom-0 h-1/6">
+      <div class="bg-blue-500 pt-1 bg-opacity-50">
         <div class="carousel-wrap">
-          <div class="owl-carousel flex container mx-auto">
+          <div class="owl-carousel owl-theme flex container mx-auto">
             <div class="item">
               <img src="./images/photo1458442310124dd.png" alt="" />
             </div>
@@ -107,5 +130,40 @@
         </div>
       </div>
     </div>
+
+    <!-- Script for jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Script for Carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+    </script>
   </body>
 </html>
