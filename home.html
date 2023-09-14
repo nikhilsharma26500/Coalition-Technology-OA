@@ -9,7 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <script href="./script.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
   </head>
   <body class="bg-home">
     <!-- Medium and Large Screen Navbar -->
@@ -17,20 +21,23 @@
       class="navbar hidden md:block flex items-center bg-white h-[10vh] px-10 py-4"
     >
       <div class="flex h-max justify-between items-center">
-        <a title="Main" class="flex items-center gap-2" href="/index.html">
+        <a
+          title="Main"
+          class="flex items-center gap-2 hover:drop-shadow-md"
+          href="/index.html"
+        >
           <img src="./images/VectorSmartObject.png" alt="" />
           <img src="./images/LOSANGELESMOUNTAINS_0.png" alt="" />
         </a>
 
         <ul
-          start="0"
-          class="flex text-black font-medium items-center underline gap-8"
+          class="md:flex md:items-center z-[-1] md:z-auto md:static absolute text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-4"
         >
-          <li class="pointer">
-            <a title="Home" href="./home.html"><i>01. Home</i></a>
+          <li class="">
+            <a title="Home" class="pointer hover:text-cyan-400 duration-200 underline" href="./home.html"><i>01. Home</i></a>
           </li>
-          <li class="pointer">
-            <a title="Team" href="./team.html"><i>02. Team</i></a>
+          <li class="">
+            <a title="Team" class="pointer hover:text-cyan-400 duration-500 underline" href="./team.html"><i>02. Team</i></a>
           </li>
         </ul>
       </div>
@@ -59,21 +66,45 @@
     <div class="text-white left-0 right-0 absolute bottom-0 h-2/6">
       <div class="h-full bg-blue-500 opacity-50">
         <div class="carousel-wrap">
-        <div class="owl-carousel flex container mx-auto">
-          <div class="item"><img src="./images/photo1458442310124dd.png" alt=""></div>
-          <div class="item"><img src="./images/photo14439809957068d.png" alt=""></div>
-          <div class="item"><img src="./images/photo1458442310124dd.png" alt=""></div>
-          <div class="item"><img src="./images/photo14439809957068d.png" alt=""></div>
-          <div class="item"><img src="./images/photo1458442310124dd.png" alt=""></div>
-          <div class="item"><img src="./images/photo14439809957068d.png" alt=""></div>
-          <div class="item"><img src="./images/photo1458442310124dd.png" alt=""></div>
-          <div class="item"><img src="./images/photo14439809957068d.png" alt=""></div>
-          <div class="item"><img src="./images/photo1458442310124dd.png" alt=""></div>
-          <div class="item"><img src="./images/photo14439809957068d.png" alt=""></div>
-          <div class="item"><img src="./images/photo1458442310124dd.png" alt=""></div>
-          <div class="item"><img src="./images/photo14439809957068d.png" alt=""></div>
+          <div class="owl-carousel flex container mx-auto">
+            <div class="item">
+              <img src="./images/photo1458442310124dd.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo14439809957068d.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo1458442310124dd.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo14439809957068d.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo1458442310124dd.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo14439809957068d.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo1458442310124dd.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo14439809957068d.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo1458442310124dd.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo14439809957068d.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo1458442310124dd.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/photo14439809957068d.png" alt="" />
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   </body>
