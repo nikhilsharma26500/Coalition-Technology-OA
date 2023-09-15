@@ -61,6 +61,10 @@ body {
   left: -30px;
 }
 
+.carousel-main{
+  width: 100%;  
+}
+
 .owl-nav .owl-next {
   right: -30px;
 }
@@ -70,6 +74,10 @@ body {
   background: url("./images/photo141702142391407.png") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
+  width: 100%;
+}
+
+footer{
   width: 100%;
 }
 

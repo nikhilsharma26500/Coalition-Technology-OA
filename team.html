@@ -9,11 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <script href="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </head>
-  <body class="bg-team">
+  <body class="bg-team relative">
     <!-- Medium and Large Screen Navbar -->
-    <div class="navbar hidden sm:block bg-white h-[10vh] px-8 py-4">
+    <div class="navbar hidden sm:block h-[10vh] px-8 py-4">
       <div class="flex h-max justify-between items-center">
         <a
           title="Main"
@@ -78,9 +78,9 @@
       </div>
     </div>
 
-    <div class="h-screen">
+    <div class="h-screen ">
       <!-- Body -->
-      <div class="w-screen h-fit">
+      <div class=" h-fit">
         <div class="md:p-10 bg-white">
           <div class="container md:px-10 px-4">
             <h1 class="text-condensed text-center md:text-left text-#414f6b font-extrabold">
@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <footer class="bg-blue-900 px-10 py-2">
+      <footer class="absolute bottom-0 bg-blue-900 px-10 py-2">
         <div class="flex h-max items-center justify-between items-center">
           <a class="flex items-center gap-2 opacity-80" href="/index.html">
             <img src="./images/VectorSmartObject.png" alt="" />
